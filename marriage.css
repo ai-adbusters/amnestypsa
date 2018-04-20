@@ -1,8 +1,8 @@
 /* Background **/
 body {
-	background: black;
+	background: white;
 	margin: 0px;
-	background-image: url(background.png);
+	background-image: url(bg.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -12,7 +12,7 @@ body {
 	height: 70px;
 }
 .nav {
-	background-color: rgb(128, 223, 255);
+	background-color: rgb(255, 204, 204);
 	width: 100%;
 	height: 70px;
 	position: fixed;
@@ -42,35 +42,48 @@ body {
 	display: block;
 	height: 60px;
 	width: auto;
+}
+.bar .heart {
 	float: right;
 	padding: 5px;
 	padding-right: 0px;
 }
-.bar .active {
-	background-color: black;
+.active {
+	background-color: rgb(153, 153, 153);
 	font-weight: bold;
 }
 .bar a:hover {
 	background-color: white;
 	color: black;
 }
+.bar .heart:hover {
+	background-color: rgb(255, 204, 204);
+}
 
 /* Title */
 .title {
 	width: 70%;
 	height: auto;
-	font-family: 'Zilla Slab', serif;
+	font-family: 'Sacramento', cursive;
 	margin: auto;
-	color: white;
 	text-align: center;
 	line-height: 0;
 	padding: 10px;
 }
 .title h1 {
 	font-size: 150;
+	color: rgb(255, 204, 204);
 }
 .title h2 {
 	font-size: 70;
+	color: rgb(153, 153, 153);
+}
+.title h3 {
+	font-size: 100;
+	color: rgb(255, 204, 204);
+	text-decoration-line: underline;
+	text-decoration-color: rgb(153, 153, 153);
+	text-decoration-style: dashed;
 }
 
 /* Content */
@@ -80,47 +93,16 @@ body {
 	height: auto;
 	border-radius: 25px;
 	margin: auto;
+	border-style: dashed;
+	border-color: rgb(153, 153, 153);
 }
-.inav {
-	background-color: black;
-	width: 100%;
-	height: 50px;
-	margin: auto;
-}
-.types {
-	width: 100%;
-	height: 100%;
-	margin: auto;
-	display: block;
-}
-.types ul {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-	width: 100%;
-	height: 50px;
-	text-align: center;
-}
-.types li {
-	display: inline-block;
-}
-.types a {
-	display: block;
-	text-align: center;
-	width: 300px;
-    text-decoration: none;
-	padding: 15px 20px;
-	float: left;
-	color: white;
+.main h3 {
+	padding: 30px;
 	font-family: 'Zilla Slab', serif;
-}
-.types .active {
-	background-color: rgb(128, 223, 255);
-	font-weight: bold;
-}
-.types a:hover {
-	background-color: white;
-	color: black;
+	font-size: 70px;
+	text-align: center;
+	margin: 0px;
+	color: rgb(255, 204, 204);
 }
 p {
 	padding: 30px;
@@ -128,50 +110,24 @@ p {
 	font-family: 'Zilla Slab', serif;
 	font-size: 30px;
 	margin: 0px;
-}
-h2 {
-	font-family: 'Zilla Slab', serif;
-	font-size: 100;
-	margin: auto;
-	text-align: center;
-	padding: 0px;
-}
-h3 {
-	font-family: 'Zilla Slab', serif;
-	font-size: 70;
-	margin: auto;
-	text-align: center;
-	padding: 0px;
+	Color: rgb(153, 153, 153);
 }
 .main img{
-	padding: 0px;
-	display: block;
-	margin: auto;
-}
-.lg {
-	width: 70%;
-}
-.sm {
 	width: 50%;
-}
-.md {
-	width: 60%
-}
-
-/* Logo */
-.ai {
-	width: 10%;
 	height: auto;
 	padding: 30px;
-	display: block;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	margin: auto;
+	display: block;
 }
+
 
 /* Bottom */
 .end {
 	width: 100%;
 	height: 150px;
-	background-color: rgb(128, 223, 255);
+	background-color: rgb(255, 204, 204);
 }
 .cont {
 	width: 70%;
@@ -189,12 +145,8 @@ h3 {
 .left {
 	float: left;
 }
-.right {
-	float: right;
-}
 .cont ul {
 	list-style-type: none;
-    margin: 0;
     padding: 0;
 	width: 100%;
 	height: 70px;
@@ -221,7 +173,4 @@ h3 {
 	}
 	.cont {
 		width: 100%;
-	}
-	.types a{
-		width: 150px;
 	}
