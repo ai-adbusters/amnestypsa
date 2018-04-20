@@ -85,6 +85,9 @@ body {
 	text-decoration-color: rgb(153, 153, 153);
 	text-decoration-style: dashed;
 }
+.na h3 {
+	font-size: 80;
+}
 
 /* Content */
 .main {
