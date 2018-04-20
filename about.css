@@ -1,0 +1,168 @@
+/* Background **/
+body {
+	background: black;
+	margin: 0px;
+	background-image: url(background.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+/* Nav Bar */
+.spot {
+	height: 70px;
+}
+.nav {
+	background-color: rgb(128, 223, 255);
+	width: 100%;
+	height: 70px;
+	position: fixed;
+}
+.bar {
+	width: 70%;
+	height: 100%;
+	margin: auto;
+}
+.bar ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	width: 100%;
+	height: 70px;
+}
+.bar a {
+	display: block;
+	text-align: center;
+    text-decoration: none;
+	padding: 25px 20px;
+	float: left;
+	color: white;
+	font-family: 'Zilla Slab', serif;
+}
+.bar img {
+	display: block;
+	height: 60px;
+	width: auto;
+	float: right;
+	padding: 5px;
+	padding-right: 0px;
+}
+.active {
+	background-color: black;
+	font-weight: bold;
+}
+.bar a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* Title */
+.title {
+	width: 70%;
+	height: auto;
+	font-family: 'Zilla Slab', serif;
+	margin: auto;
+	color: white;
+	text-align: center;
+	line-height: 0;
+	padding: 10px;
+}
+.title h1 {
+	font-size: 150;
+}
+
+/* Content */
+.main {
+	background-color: white;
+	width: 70%;
+	height: auto;
+	border-radius: 25px;
+	margin: auto;
+}
+p {
+	padding: 30px;
+	padding-top: 0px;
+	font-family: 'Zilla Slab', serif;
+	font-size: 30px;
+}
+h2 {
+	font-family: 'Zilla Slab', serif;
+	font-size: 100;
+	margin: auto;
+	text-align: center;
+	padding: 0px;
+}
+.main img {
+	width: 60%;
+	height: auto;
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin: auto;
+	display: block;
+}
+
+/* Logo */
+.ai {
+	width: 10%;
+	height: auto;
+	padding: 30px;
+	display: block;
+	margin: auto;
+	padding-top: 0px;
+}
+
+/* Bottom */
+.end {
+	width: 100%;
+	height: 150px;
+	background-color: rgb(128, 223, 255);
+}
+.cont {
+	width: 70%;
+	height: 100%;
+	margin: auto;
+}
+.cont a {
+	display: block;
+	text-align: center;
+    text-decoration: none;
+	padding: 65px 20px;
+	color: black;
+	font-family: 'Zilla Slab', serif;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.cont ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	width: 100%;
+	height: 70px;
+}
+
+/* Adaptive **/
+@media (max-width: 1030px) {
+	.title h1 {
+		font-size: 100;
+	}
+	.title h2 {
+		font-size: 50;
+	}
+}
+@media (max-width: 700px) {
+	.title {
+		width: 90%;
+	}
+	.bar {
+		width: 90%;
+	}
+	.main {
+		width: 90%;
+	}
+	.cont {
+		width: 100%;
+	}
